@@ -89,3 +89,37 @@
     ```bash
     yarn add --dev jest
     ```
+
+## Running a Node.js Application
+
+Here's a guide on how to run a the application:
+
+**Prerequisites:**
+
+- **Node.js and npm (or yarn):** You'll need Node.js installed on your system. It comes bundled with npm, the Node Package Manager. Alternatively, you can use yarn as a package manager. Download and install Node.js from the official website: [https://nodejs.org/en](https://nodejs.org/en)
+
+**Steps:**
+
+1. **Clone the repository:**
+   - Create a new directory for your project.
+   - Clone the repo using `git clone ...`  in your terminal within the project directory.
+
+2. **Install Dependencies:**
+   - Install the libraries the application needs. These are listed in the `dependencies` section of your `package.json` file.
+   - Install them using npm or yarn:
+     ```bash
+     npm install
+     yarn
+     ```
+
+3. **Run the Application:**
+   - Open your terminal and navigate to your project directory.
+   - Locate the main entry point of the application (a file named `app.js`).
+   - Run the application using the `node` command followed by the filename of your main entry point:
+     ```bash
+     node app.js  # Example: Assuming your main file is app.js
+     ```
+   - This will start your Node.js application, and it will typically run in the background, listening for requests on a specific port (usually port 3000 by default).
+
+4. **Access the Application (Optional):**
+   - the application creates a web server, you can access it in a web browser by visiting `http://localhost:<port>`, where `<port>` is the port your application is listening on (e.g., `http://localhost:3000`).
